@@ -1,0 +1,22 @@
+[32m   exists public/stylesheets[0m
+unchanged sass/stylesheet.sass[0m
+| ----------------------------------------------- | ----- | ---------- | -------------- | ----------- | --------- | -------------- |
+| Filename                                        | Rules | Properties |    Mixins Defs | Mixins Used | CSS Rules | CSS Properties |
+| ----------------------------------------------- | ----- | ---------- | -------------- | ----------- | --------- | -------------- |
+| sass/_base.sass                                 |     4 |          5 |              0 |           0 |        -- |             -- |
+| sass/_landscape.sass                            |     0 |          0 |              1 |           0 |        -- |             -- |
+| sass/_mobile-480.sass                           |     5 |         11 |              1 |           0 |        -- |             -- |
+| sass/_portrait.sass                             |     0 |          0 |              1 |           0 |        -- |             -- |
+| sass/_screen.sass                               |     6 |         11 |              0 |           1 |        -- |             -- |
+| sass/stylesheet.sass                            |     0 |          0 |              0 |           3 |  DISABLED |       DISABLED |
+| sass/partials/_color.sass                       |     0 |          0 |              0 |           0 |        -- |             -- |
+| sass/partials/_minimal-base-styles.sass         |    59 |         40 |              0 |           2 |        -- |             -- |
+| sass/partials/_non-semantic-helper-classes.sass |    13 |         33 |              0 |           0 |        -- |             -- |
+| sass/partials/_typography.sass                  |     1 |          1 |              0 |           0 |        -- |             -- |
+| ----------------------------------------------- | ----- | ---------- | -------------- | ----------- | --------- | -------------- |
+| Total (10 files):                               |    88 |        101 |              3 |           6 |         0 |              0 |
+| ----------------------------------------------- | ----- | ---------- | -------------- | ----------- | --------- | -------------- |
+
+Install css_parser to enable stats on your css files:
+
+	gem install css_parser

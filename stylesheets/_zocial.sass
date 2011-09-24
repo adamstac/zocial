@@ -1,0 +1,168 @@
+// Defaults
+$zocial-font-size: 1.8em !default
+$zocial-icon-font: zocial-lite !default
+$zocial-text-font: helvetica !default
+
+@import "fonts"
+
+=zocial
+  .zocial, .zocial > span
+    +border-radius(0.2em)
+    position: relative
+
+  // Button Structure
+  .zocial
+    +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+    +font-family($zocial-text-font)
+    +text-shadow(0 1px 0 rgba(#000,.5))
+    position: relative
+    border: 1px solid rgba(#000,.2)
+    border-bottom-color: rgba(#000,.4)
+    color: #fff !important
+    cursor: pointer
+    display: inline-block
+    font-size: $zocial-font-size
+    outline: none
+    padding: 0
+    text-decoration: none !important
+    
+    // Misc
+    button::-moz-focus-inner
+      border: 0
+      padding: 0
+
+    // These buttons can be displayed as standalone icons if you also add a class of "icon"
+    &.icon
+      width: 1.85em
+      overflow: hidden
+
+    & > span
+      position: relative
+      display: inline-block
+      font-size: 80%
+      font-weight: bold
+      line-height: 2em
+      padding-right: 0.825em
+      white-space: nowrap
+      &:before
+        +box-shadow(0.075em 0 0 rgba(#fff,.25))
+        +font-family($zocial-icon-font)
+        border-right: 0.075em solid rgba(#000,.1)
+        display: block
+        float: left
+        font-size: 125%
+        font-style: normal
+        font-weight: normal
+        margin: 0.0675em 0.5em 0 0
+        text-align: center
+        width: 1.75em
+
+    // Gradient default
+    & > span
+      +background(linear-gradient(top, rgba(#fff,.1), rgba(#fff,.05) 49%, rgba(#000,.05) 51%, rgba(#000,.1)))
+
+    // Gradient hover and focus
+    &:hover > span, &:focus > span
+      +background(linear-gradient(top, rgba(#fff,.15), rgba(#fff,.15) 49%, rgba(#000,.1) 51%, rgba(#000,.15)))
+
+    // Gradient active/clicked
+    &:active > span
+      +background(linear-gradient(bottom, rgba(#fff,.1), rgba(#fff, 0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
+
+    // Adjustments for light background buttons
+    &.twitter,
+    &.github
+      +text-shadow(0 1px 0 rgba(#fff,.8))
+      +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+
+    &.github:hover > span,
+    &.twitter:focus > span,
+    &.github:focus > span
+      +background(linear-gradient(top, rgba(#fff,.5), rgba(#fff,.2) 49%, rgba(#000,.05) 51%, rgba(#000,.15)))
+
+    &.twitter:active > span,
+    &.github:active > span
+      +background(linear-gradient(bottom, rgba(#fff,0), rgba(#fff,0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
+
+    // non-breaking space &nbsp;
+    $nbsp: "\00a0"
+
+    // Default
+    & > span:before
+      content: $nbsp
+    
+    // Basic colors + content
+    &.white
+      background: #fff
+      color: #000 !important
+      &  > span:before
+        content: $nbsp
+        color: #000
+    &.black
+      background: #000
+      color: #fff !important
+      &  > span:before
+        content: $nbsp
+        color: #fff
+    &.red
+      background: red
+      color: #fff !important
+      &  > span:before
+        content: $nbsp
+        color: #fff
+    &.green
+      background: green
+      color: #fff !important
+      &  > span:before
+        content: $nbsp
+        color: #fff
+    &.blue
+      background: blue
+      color: #fff !important
+      &  > span:before
+        content: $nbsp
+        color: #fff
+
+    // Icons
+    &.facebook > span:before
+      content: "f"
+    &.github > span:before
+      content: "g"
+    &.googleplus > span:before
+      content: "+"
+    &.rss > span:before
+      content: "R"
+    &.smashingmag > span:before
+      content: "*"
+    &.twitter > span:before
+      content: "T"
+
+    // Colors
+    &.github
+      color: #050505 !important
+      background: #FBFBFB
+    &.googleplus
+      background: #282626
+    &.googleplus:before
+      content: ""
+      display: block
+      height: 0.2em
+      margin-bottom: -0.1em
+      width: 100%
+      position: relative
+      left: 0em
+      top: 0
+      +background(linear-gradient(left, #d20e1b, #d20e1b 25%, #3156e6 25%, #3156e6 50%, #2aa134 50%, #2aa134 75%, #ecb01b 75%, #ecb01b))
+      +border-radius(0.2em 0.2em 0 0)
+      border-bottom: 1px solid rgba(#000,.8)
+      +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+      z-index: 0
+    &.facebook
+      background: #4863AE
+    &.rss
+      background: #FF7F25
+    &.smashingmag
+      background: #FF4F27
+    &.twitter
+      background: #E9F9FF
+      color: #3C6B9C !important
