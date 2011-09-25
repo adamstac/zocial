@@ -1,6 +1,6 @@
 # Zocial Buttons
 
-HUGE thanks to Sam Collins for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
+HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
 You can find the CSS only version (no Sass) and the full font set at [zocial.smcllns.com](http://zocial.smcllns.com/). This project comes with a free subset of that font set, and includes:
 
@@ -19,7 +19,6 @@ The first step is to install the Ruby gem. If you are not yet setup to work with
 
 Next, we need to require Zocial in the Compass config file of your project.
 
-    # execute at the root of your project
     require 'zocial'
 
 Next is a very crucial step ... getting the fonts installed to your project. This is the step you'll get hung up on if you didn't do the previous steps. Head back to the terminal and run this command from the root of the project you're installing Zocial to.
