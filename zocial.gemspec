@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
 
   # Gem Details
   s.name = "zocial"
-  s.description = %q{Zocial CSS3 button set and vector icon with @font-face}
-  s.summary = %q{Zocial CSS3 button set and vector icon with @font-face as a Sass mixin and usable as a Compass extension}
+  s.description = %q{Zocial CSS3 button set and vector icons with @font-face}
+  s.summary = %q{Zocial CSS3 button set and vector icons with @font-face as a Sass mixin and usable as a Compass extension}
   s.authors = ["Adam Stacoviak", "Sam Collins"]
   s.email = ["adam@stacoviak.com", "sam@eventasaur.us"]
   s.homepage = "https://github.com/adamstac/zocial"
