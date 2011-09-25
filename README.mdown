@@ -1,4 +1,4 @@
-# Zocial Buttons
+# Zocial, CSS3 button set and vector icons with @font-face
 
 HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
@@ -51,6 +51,47 @@ Based on the default variables, you can change out `$zocial-icon-font` to just `
 You can also set the `$zocial-font-size` to something larger or smaller than the default of 1.8em.
 
 Last but not least, you can set the `$zocial-text-font` to something other than Helvetica. The font family choices are listed below. In a future release, we plan to work on adding better options for using other fonts. Please be patient.
+
+## HTML Markup
+
+Here's a snippet of example HTML markup in both HTML and Haml. The caveat or gotcha that most people stumble over is the required nested `<span>` element. As you can see, each Zocial button gets the required `.zocial` class name plus the button name.
+
+    <button class="zocial icon twitter">
+      <span>Sign in with Twitter</span>
+    </button>
+    <a class="zocial icon twitter" href="#">
+      <span>Sign in with Twitter</span>
+    </a>
+
+    %button.zocial.icon.twitter
+      %span Sign in with Twitter
+    %a(href="#" class="zocial icon twitter")
+      %span Sign in with Twitter
+
+To use just the icon version of the Zocial button, all you need to do is add the class name `.icon` to the above markup. Here's is the repeated code, but this time adding the `.icon` class.
+
+    <button class="zocial twitter">
+      <span>Sign in with Twitter</span>
+    </button>
+    <a class="zocial twitter" href="#">
+      <span>Sign in with Twitter</span>
+    </a>
+
+    %button.zocial.icon.twitter
+      %span Sign in with Twitter
+    %a(href="#" class="zocial icon twitter")
+      %span Sign in with Twitter
+
+## Buttons classes
+
+The examples shown above illustrate how to use the Twitter Zocial button. Below are the full class options for the named buttons.
+
+* .twitter
+* .facebook
+* .googleplus
+* .github
+* .rss
+* .smashingmag
 
 ## Font Family Choices
 
