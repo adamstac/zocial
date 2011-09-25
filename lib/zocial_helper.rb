@@ -13,7 +13,7 @@ module ZocialHelper
     css_classes << 'zocial'
     options[:class] = css_classes.uniq.join(" ")
 
-    button_tag(text, options)
+    button_tag(content_tag(:span, text), options)
   end
 
 end
