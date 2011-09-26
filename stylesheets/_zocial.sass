@@ -1,6 +1,7 @@
 // Defaults
 $zocial-font-size: 1.8em !default
 $zocial-icon-font: zocial-lite !default
+$zocial-icon-default: "-" !default
 $zocial-text-font: helvetica !default
 
 @import "fonts"
@@ -70,57 +71,65 @@ $zocial-text-font: helvetica !default
       +background(linear-gradient(bottom, rgba(#fff,.1), rgba(#fff, 0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
 
     // Adjustments for light background buttons
-    &.twitter,
-    &.github
+    &.white, &.twitter, &.github
       +text-shadow(0 1px 0 rgba(#fff,.8))
       +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
 
-    &.github:hover > span,
-    &.twitter:focus > span,
-    &.github:focus > span
+    &.github:hover > span, &.twitter:focus > span, &.github:focus > span
       +background(linear-gradient(top, rgba(#fff,.5), rgba(#fff,.2) 49%, rgba(#000,.05) 51%, rgba(#000,.15)))
 
-    &.twitter:active > span,
-    &.github:active > span
+    &.twitter:active > span, &.github:active > span
       +background(linear-gradient(bottom, rgba(#fff,0), rgba(#fff,0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
 
-    // non-breaking space &nbsp;
-    $nbsp: "\00a0"
+    // Assumes full set if the icon-font is zocial
+    @if $zocial-icon-font == "zocial"
+      // Adjustments for light background buttons
+      &.plancast, &.posterous, &.dropbox, &.openid, &.instapaper, &.wikipedia, &.cloudapp, &.gmail
+        +text-shadow(0 1px 0 rgba(#fff,.8))
+        +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+
+      &.plancast:hover > span, &.posterous:hover > span, &.dropbox:hover > span, &.openid:hover > span, &.instapaper:hover > span, &.github:hover > span, &.wikipedia:hover > span, &.gmail:hover > span,
+      &.plancast:focus > span, &.posterous:focus > span, &.dropbox:focus > span, &.openid:focus > span, &.instapaper:focus > span, &.github:focus > span, &.wikipedia:focus > span, &.gmail:focus > span
+        +background(linear-gradient(top, rgba(#fff,.5), rgba(#fff,.2) 49%, rgba(#000,.05) 51%, rgba(#000,.15)))
+
+      &.plancast:active > span, &.posterous:active > span, &.dropbox:active > span, &.openid:active > span, &.instapaper:active > span, &.wikipedia:active > span, &.gmail:active > span
+        +background(linear-gradient(bottom, rgba(#fff,0), rgba(#fff,0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
+
 
     // Default
     & > span:before
-      content: $nbsp
+      content: $zocial-icon-default
     
     // Basic colors + content
     &.white
       background: #fff
       color: #000 !important
       &  > span:before
-        content: $nbsp
+        content: $zocial-icon-default
         color: #000
     &.black
       background: #000
       color: #fff !important
       &  > span:before
-        content: $nbsp
+        content: $zocial-icon-default
         color: #fff
     &.red
       background: red
       color: #fff !important
       &  > span:before
-        content: $nbsp
+        content: $zocial-icon-default
         color: #fff
     &.green
       background: green
       color: #fff !important
       &  > span:before
-        content: $nbsp
+        content: $zocial-icon-default
         color: #fff
     &.blue
       background: blue
       color: #fff !important
       &  > span:before
-        content: $nbsp
+        content: $zocial-icon-default
         color: #fff
 
     // Icons
@@ -136,6 +145,141 @@ $zocial-text-font: helvetica !default
       content: "*"
     &.twitter > span:before
       content: "T"
+    
+    // Assumes full set if the icon-font is zocial
+    @if $zocial-icon-font == "zocial"
+      &.google > span:before
+        content: "G"
+
+      &.linkedin > span:before
+        content: "L"
+
+      &.meetup > span:before
+        content: "M"
+
+      &.plancast > span:before
+        content: "P"
+
+      &.soundcloud > span:before
+        content: "s"
+
+      &.tumblr > span:before
+        content: "t"
+
+      &.dribbble > span:before
+        content: "D"
+
+      &.forrst > span:before
+        content: ":"
+        color: #50894F
+
+      &.dropbox > span:before
+        content: "d"
+        color: #4EA4E3
+
+      &.posterous > span:before
+        content: "~"
+
+      &.flattr > span:before
+        content: "%"
+
+      &.spotify > span:before
+        content: "="
+
+      &.foursquare > span:before
+        content: "4"
+
+      &.intensedebate > span:before
+        content: "{"
+
+      &.wordpress > span:before
+        content: "w"
+
+      &.yahoo > span:before
+        content: "Y"
+
+      &.openid > span:before
+        content: "o"
+        color: #FF921D
+
+      &.guest > span:before
+        content: "?"
+
+      &.instapaper > span:before
+        content: "I"
+
+      &.android > span:before
+        content: "&"
+
+      &.itunes > span:before
+        content: "A"
+
+      &.paypal > span:before
+        content: "$"
+
+      &.appstore > span:before
+        content: "^"
+
+      &.creativecommons > span:before
+        content: "C"
+
+      &.disqus > span:before
+        content: "Q"
+
+      &.eventasaurus > span:before
+        content: "v"
+
+      &.eventbrite > span:before
+        content: "|"
+
+      &.chrome > span:before
+        content: "["
+
+      &.html5 > span:before
+        content: "5"
+
+      &.songkick > span:before
+        content: "k"
+
+      &.vimeo > span:before
+        content: "V"
+
+      &.youtube > span:before
+        content: "U"
+
+      &.gowalla > span:before
+        content: "@"
+
+      &.skype > span:before
+        content: "S"
+
+      &.aol > span:before
+        content: "\""
+
+      &.wikipedia > span:before
+        content: ","
+
+      &.yelp > span:before
+        content: "y"
+
+      &.evernote > span:before
+        content: "E"
+
+      &.ie > span:before
+        content: "6"
+
+      &.cloudapp > span:before
+        content: "c"
+
+      &.gmail > span:before
+        content: "m"
+        color: #ff0000
+
+      &.amazon > span:before
+        content: "a"
+
+      &.lastfm > span:before
+        content: "l"
 
     // Colors
     &.github
@@ -166,3 +310,154 @@ $zocial-text-font: helvetica !default
     &.twitter
       background: #E9F9FF
       color: #3C6B9C !important
+
+    // Assumes full set if the icon-font is zocial
+    @if $zocial-icon-font == "zocial"
+      &.openid
+        background: #f5f5f5
+        color: #333 !important
+
+      &.guest
+        background: #1B4D6D
+
+      &.instapaper
+        color: #222 !important
+        background: #eee
+
+      &.android
+        background: #A4C639
+
+      &.itunes
+        background: #222
+
+      &.paypal
+        background: #FF921D
+        color: #032751 !important
+        +text-shadow(0 1px 0 rgba(#fff,.5))
+
+      &.appstore
+        background: #007DCB !important
+
+      &.creativecommons
+        background: #000
+
+      &.disqus
+        background: #216892
+
+      &.gowalla
+        background: #FF720A
+
+      &.skype
+        background: #00A2ED
+
+      &.aol
+        background: #FF0000
+
+      &.wikipedia
+        background: #fff
+        color: #000 !important
+
+      &.yelp
+        background: #E60010
+
+      &.scribd > span:before
+        content: "}"
+        color: #00D5EA !important
+
+      &.scribd
+        background: #231C1A
+
+      &.eventasaurus
+        background: #8CCC33
+
+      &.eventbrite
+        background: #FF5616
+
+      &.chrome
+        background: #006CD4
+
+      &.html5
+        background: #FF3617
+
+      &.songkick
+        background: #FF0050
+
+      &.vimeo
+        background: #00A2CD
+
+      &.youtube
+        background: #FF0000
+
+      &.yahoo
+        background: #A200C2
+
+      &.intensedebate
+        background: #0099E1
+
+      &.wordpress
+        background: #464646
+
+      &.linkedin
+        background: #0083A8
+
+      &.google
+        background: #4E6CF7
+
+      &.meetup
+        background: #FF0026
+
+      &.plancast
+        background: #E7EBED
+        color: #333 !important
+
+      &.soundcloud
+        background: #FF4500
+
+      &.tumblr
+        background: #374a61
+
+      &.foursquare
+        background: #44A8E0
+
+      &.dribbble
+        background: #ea4c89
+
+      &.forrst
+        background: #1E360D
+
+      &.dropbox
+        background: #f5f5f5
+        color: #312c2a !important
+
+      &.posterous
+        background: #FFD959
+        color: #BC7134 !important
+
+      &.flattr
+        background: #8ABA42
+
+      &.spotify
+        background: #60AF00
+
+      &.evernote
+        background: #6BB130
+        color: #fff !important
+
+      &.ie
+        background: #00A1D9
+
+      &.cloudapp
+        background: #fff
+        color: #312c2a !important
+
+      &.gmail
+        background: #efefef
+        color: #222 !important
+
+      &.amazon
+        background: #FFAD1D
+        color: #030037 !important
+        text-shadow: 0 1px 0 rgba(#fff,.5)
+
+      &.lastfm
+        background: #dc1a23

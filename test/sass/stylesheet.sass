@@ -9,26 +9,58 @@
 +zocial
 
 body
-  background: #fcfcfc
-  color: #353535
-  font: 10px/16px "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif
+  background: #f0ecdf
+  color: #312c2a
+  font: 10px/16px "Baskerville Old Face", Georgia, serif
 
 .container
   +pie-clearfix
   margin: 50px auto
+  width: 620px
+
+.headings
+  +text-shadow(rgba(#fff, .75) 0 1px 0)
+  +opacity(.9)
+  background: url("http://zocial.smcllns.com/img/dingbat.png") no-repeat 50% bottom
+  letter-spacing: 1px
+  height: 80px
+  margin:
+    top: 25px
+    bottom: 30px
   text-align: center
-  width: 720px
+  a
+    color: inherit
+    padding-bottom: 3px
+    text-decoration: none
+    &:hover
+      border-bottom: 1px solid rgba(#312c2a, .3)
 
 h1
-  font-size: 4em
-  font-weight: normal
-  margin-bottom: 50px
+  @extend .headings
+  font-size: 30px
+
+h2
+  @extend .headings
+  font-size: 12px
+  height: 80px
+  letter-spacing: 1px
+  margin:
+    top: 25px
+    bottom: 30px
+  
+
+.buttons
+  +box-shadow(#d9d6cd 0 0 10px 5px)
+  background: #fff
+  padding: 50px
 
 .z-buttons
   margin-bottom: 40px
 
 .z-buttons, .z-icons
   a, button
-    margin-bottom: 15px
+    margin:
+      right: 10px
+      bottom: 15px
   button
     display: none

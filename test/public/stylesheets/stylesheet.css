@@ -151,7 +151,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
-.zocial.twitter, .zocial.github {
+.zocial.white, .zocial.twitter, .zocial.github {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
@@ -175,14 +175,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
 .zocial > span:before {
-  content: "\00a0";
+  content: "-";
 }
 .zocial.white {
   background: white;
   color: black !important;
 }
 .zocial.white > span:before {
-  content: "\00a0";
+  content: "-";
   color: black;
 }
 .zocial.black {
@@ -190,7 +190,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white !important;
 }
 .zocial.black > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.red {
@@ -198,7 +198,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white !important;
 }
 .zocial.red > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.green {
@@ -206,7 +206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white !important;
 }
 .zocial.green > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.blue {
@@ -214,7 +214,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white !important;
 }
 .zocial.blue > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.facebook > span:before {
@@ -285,16 +285,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: #fcfcfc;
-  color: #353535;
-  font: 10px/16px "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+  background: #f0ecdf;
+  color: #312c2a;
+  font: 10px/16px "Baskerville Old Face", Georgia, serif;
 }
 
 .container {
   *zoom: 1;
   margin: 50px auto;
-  text-align: center;
-  width: 720px;
+  width: 620px;
 }
 .container:after {
   content: "";
@@ -302,10 +301,45 @@ body {
   clear: both;
 }
 
+.headings, h1, h2 {
+  text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  background: url("http://zocial.smcllns.com/img/dingbat.png") no-repeat 50% bottom;
+  letter-spacing: 1px;
+  height: 80px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.headings a, h1 a, h2 a {
+  color: inherit;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.headings a:hover, h1 a:hover, h2 a:hover {
+  border-bottom: 1px solid rgba(49, 44, 42, 0.3);
+}
+
 h1 {
-  font-size: 4em;
-  font-weight: normal;
-  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 12px;
+  height: 80px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  -moz-box-shadow: #d9d6cd 0 0 10px 5px;
+  -webkit-box-shadow: #d9d6cd 0 0 10px 5px;
+  -o-box-shadow: #d9d6cd 0 0 10px 5px;
+  box-shadow: #d9d6cd 0 0 10px 5px;
+  background: white;
+  padding: 50px;
 }
 
 .z-buttons {
@@ -313,6 +347,7 @@ h1 {
 }
 
 .z-buttons a, .z-buttons button, .z-icons a, .z-icons button {
+  margin-right: 10px;
   margin-bottom: 15px;
 }
 .z-buttons button, .z-icons button {

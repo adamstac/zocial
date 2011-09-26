@@ -95,7 +95,7 @@
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
-.zocial.twitter, .zocial.github {
+.zocial.white, .zocial.twitter, .zocial.github {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
@@ -119,14 +119,14 @@
   background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
 .zocial > span:before {
-  content: "\00a0";
+  content: "-";
 }
 .zocial.white {
   background: white;
   color: black !important;
 }
 .zocial.white > span:before {
-  content: "\00a0";
+  content: "-";
   color: black;
 }
 .zocial.black {
@@ -134,7 +134,7 @@
   color: white !important;
 }
 .zocial.black > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.red {
@@ -142,7 +142,7 @@
   color: white !important;
 }
 .zocial.red > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.green {
@@ -150,7 +150,7 @@
   color: white !important;
 }
 .zocial.green > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.blue {
@@ -158,7 +158,7 @@
   color: white !important;
 }
 .zocial.blue > span:before {
-  content: "\00a0";
+  content: "-";
   color: white;
 }
 .zocial.facebook > span:before {

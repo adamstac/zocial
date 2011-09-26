@@ -1,4 +1,6 @@
-# Zocial, CSS3 button set and vector icons with @font-face
+# Zocial: CSS3 Buttons, Sass Framework.
+
+## Zocial is a CSS3 button set and vector icons with @font-face bundled as a Sass framework.
 
 HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
@@ -10,6 +12,8 @@ You can find the CSS only version (no Sass) and the full font set at [zocial.smc
 * GitHub
 * RSS
 * Smashing Magazine
+
+![Zocial-Lite Preview](https://github.com/adamstac/zocial/test/public/images/zocial-lite-preview.jpg)
 
 ## Installation
 
@@ -44,9 +48,10 @@ Zocial Buttons is delivered with a few default variables in place you can overri
     // Defaults
     $zocial-font-size: 1.8em
     $zocial-icon-font: zocial-lite
+    $zocial-icon-default: "-"
     $zocial-text-font: helvetica
 
-Based on the default variables, you can change out `$zocial-icon-font` to just `zocial` if you own the full set. Keep in mind that if you use the full set, you are still bound by the license terms of the full set even though this framework is open source.
+Based on the default variables, you can set `$zocial-icon-font` to `zocial` if you own the full set. This will also unfurl the styles for the full set as well as Zocial-Lite. Keep in mind that if you use the full set in your project, you are still bound by the license terms of the full set even though this framework is open source.
 
 You can also set the `$zocial-font-size` to something larger or smaller than the default of 1.8em.
 
