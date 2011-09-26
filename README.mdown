@@ -13,7 +13,7 @@ You can find the CSS only version (no Sass) and the full font set at [zocial.smc
 * RSS
 * Smashing Magazine
 
-![Zocial-Lite Preview](https://github.com/adamstac/zocial/test/public/images/zocial-lite-preview.jpg?raw=true)
+![Zocial-Lite Preview](https://github.com/adamstac/zocial/raw/master/test/public/images/zocial-lite-preview.jpg)
 
 ## Installation
 
