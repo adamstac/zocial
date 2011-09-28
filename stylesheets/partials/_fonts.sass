@@ -1,19 +1,26 @@
 // Font family mixin
 =font-family($zocial-text-font)
   @extend .ff-#{$zocial-text-font}
+  
+// Example:
+// 
+// body > header
+//   +font-family(helvetica)
+// Options: zocial, zocial-lite, helvetica, arial (alias to helvetica), lucida, lucida-grande (alias to lucida), times, georgia
 
-// Zovial fonts
+// Zocial full
 @if $zocial-icon-font == "zocial"
   +font-face("Zocial", font-files("zocial/zocial-regular-webfont.woff", woff, "zocial/zocial-regular-webfont.ttf", truetype, "zocial/zocial-regular-webfont.svg", svg), "zocial/zocial-regular-webfont.eot")
   .ff-zocial
     font-family: "Zocial", sans-serif
 
+// Zocial lite
 @if $zocial-icon-font == "zocial-lite"
   +font-face("Zocial-Lite", font-files("zocial/zocial-lite-regular-webfont.woff", woff, "zocial/zocial-lite-regular-webfont.ttf", truetype, "zocial/zocial-lite-regular-webfont.svg", svg), "zocial/zocial-lite-regular-webfont.eot")
   .ff-zocial-lite
     font-family: "Zocial-Lite", sans-serif
 
-// Font stack classes
+// Common font stack classes
 @if $zocial-text-font == "helvetica"
   .ff-helvetica
     font-family: Clean, "Helvetica-Neue", Helvetica, Arial, sans-serif
@@ -32,8 +39,8 @@
 
 @if $zocial-text-font == "times"
   .ff-times
-    font-family: times, "Times New Roman", serif
+    font-family: Times, "Times New Roman", serif
 
 @if $zocial-text-font == "georgia"
   .ff-georgia
-    font-family: georgia, times, "Times New Roman", serif
+    font-family: Georgia, Times, "Times New Roman", serif
