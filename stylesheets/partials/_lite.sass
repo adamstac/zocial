@@ -1,0 +1,70 @@
+=zocial-lite
+  +zocial-facebook
+  +zocial-github
+  +zocial-googleplus
+  +zocial-rss
+  +zocial-smashingmag
+  +zocial-twitter
+
+// Open Source - Sorted A-Z
+=zocial-facebook
+  .zocial.facebook
+    background: #4863AE
+    &> span:before
+      content: "f"
+
+=zocial-github
+  .zocial.github
+    @extend .adjustment-1
+    color: #050505 !important
+    background: #FBFBFB
+    &:hover > span, &:focus > span
+      @extend .adjustment-2
+    &:active > span
+      @extend .adjustment-3
+    & > span:before
+      content: "g"
+
+=zocial-googleplus
+  .zocial.googleplus
+    background: #282626
+    &:before
+      content: ""
+      display: block
+      height: 0.2em
+      margin-bottom: -0.1em
+      width: 100%
+      position: relative
+      left: 0em
+      top: 0
+      +background(linear-gradient(left, #d20e1b, #d20e1b 25%, #3156e6 25%, #3156e6 50%, #2aa134 50%, #2aa134 75%, #ecb01b 75%, #ecb01b))
+      +border-radius(0.2em 0.2em 0 0)
+      border-bottom: 1px solid rgba(#000,.8)
+      +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+      z-index: 0
+    & > span:before
+      content: "+"
+
+=zocial-rss
+  .zocial.rss
+    background: #FF7F25
+    & > span:before
+      content: "R"
+
+=zocial-smashingmag
+  .zocial.smashingmag
+    background: #FF4F27
+    & > span:before
+      content: "*"
+
+=zocial-twitter
+  .zocial.twitter
+    @extend .adjustment-1
+    background: #E9F9FF
+    color: #3C6B9C !important
+    &:focus > span
+      @extend .adjustment-2
+    &:active > span
+      @extend .adjustment-3
+    & > span:before
+      content: "T"

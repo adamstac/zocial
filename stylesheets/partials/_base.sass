@@ -1,0 +1,69 @@
+=zocial-base
+  .zocial, .zocial > span
+    +border-radius(0.2em)
+    position: relative
+
+  // Button Structure
+  .zocial
+    +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+    +font-family($zocial-text-font)
+    +text-shadow(0 1px 0 rgba(#000,.5))
+    position: relative
+    border: 1px solid rgba(#000,.2)
+    border-bottom-color: rgba(#000,.4)
+    color: #fff !important
+    cursor: pointer
+    display: inline-block
+    font-size: $zocial-font-size
+    outline: none
+    padding: 0
+    text-decoration: none !important
+    
+    // Misc
+    button::-moz-focus-inner
+      border: 0
+      padding: 0
+
+    // These buttons can be displayed as standalone icons if you also add a class of "icon"
+    &.icon
+      width: 1.85em
+      overflow: hidden
+
+    & > span
+      position: relative
+      display: inline-block
+      font-size: 80%
+      font-weight: $zocial-font-weight
+      line-height: 2em
+      padding-right: 0.825em
+      white-space: nowrap
+      &:before
+        +box-shadow(0.075em 0 0 rgba(#fff,.25))
+        +font-family($zocial-icon-font)
+        border-right: 0.075em solid rgba(#000,.1)
+        display: block
+        float: left
+        font-size: 125%
+        font-style: normal
+        font-weight: normal
+        margin: 0.0675em 0.5em 0 0
+        text-align: center
+        width: 1.75em
+
+    // Gradient default
+    & > span
+      +background(linear-gradient(top, rgba(#fff,.1), rgba(#fff,.05) 49%, rgba(#000,.05) 51%, rgba(#000,.1)))
+
+    // Gradient hover and focus
+    &:hover > span, &:focus > span
+      +background(linear-gradient(top, rgba(#fff,.15), rgba(#fff,.15) 49%, rgba(#000,.1) 51%, rgba(#000,.15)))
+
+    // Gradient active/clicked
+    &:active > span
+      +background(linear-gradient(bottom, rgba(#fff,.1), rgba(#fff, 0) 30%, rgba(#000, 0) 50%, rgba(#000,.1)))
+
+    // Default button styles
+    & > span:before
+      content: $zocial-icon-default
+
++zocial-base

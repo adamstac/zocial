@@ -1,0 +1,48 @@
+=zocial-colors
+  +zocial-white
+  +zocial-black
+  +zocial-red
+  +zocial-green
+  +zocial-blue
+
+// Colors
+=zocial-white
+  .zocial.white
+    @extend .adjustment-1
+    background: #fff
+    color: #000 !important
+    &  > span:before
+      content: $zocial-icon-default
+      color: #000
+
+=zocial-black
+  .zocial.black
+    background: #000
+    color: #fff !important
+    &  > span:before
+      content: $zocial-icon-default
+      color: #fff
+
+=zocial-red
+  .zocial.red
+    background: red
+    color: #fff !important
+    &  > span:before
+      content: $zocial-icon-default
+      color: #fff
+
+=zocial-green
+  .zocial.green
+    background: green
+    color: #fff !important
+    &  > span:before
+      content: $zocial-icon-default
+      color: #fff
+
+=zocial-blue
+  .zocial.blue
+    background: blue
+    color: #fff !important
+    &  > span:before
+      content: $zocial-icon-default
+      color: #fff
