@@ -1,3 +1,7 @@
+// Include zocial-base
++zocial-base
+
+// Zocial base button architecture
 =zocial-base
   .zocial, .zocial > span
     +border-radius(0.2em)
@@ -19,12 +23,12 @@
     padding: 0
     text-decoration: none !important
     
-    // Misc
+    // Tweak to styles for -moz
     button::-moz-focus-inner
       border: 0
       padding: 0
 
-    // These buttons can be displayed as standalone icons if you also add a class of "icon"
+    // Add a class of "icon" to display as standalone icons instead
     &.icon
       width: 1.85em
       overflow: hidden
@@ -65,5 +69,3 @@
     // Default button styles
     & > span:before
       content: $zocial-icon-default
-
-+zocial-base
