@@ -95,14 +95,19 @@
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
-.zocial.twitter, .zocial.github {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+.zocial > span:before {
+  content: "-";
+}
+
+.adjustment-1, .zocial.github, .zocial.twitter {
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -o-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-.zocial.github:hover > span, .zocial.twitter:focus > span, .zocial.github:focus > span {
+
+.adjustment-2, .zocial.github:hover > span, .zocial.github:focus > span, .zocial.twitter:focus > span {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.15)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
@@ -110,7 +115,8 @@
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
   background: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
 }
-.zocial.twitter:active > span, .zocial.github:active > span {
+
+.adjustment-3, .zocial.github:active > span, .zocial.twitter:active > span {
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
   background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
@@ -118,71 +124,22 @@
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
-.zocial > span:before {
-  content: "\00a0";
-}
-.zocial.white {
-  background: white;
-  color: black !important;
-}
-.zocial.white > span:before {
-  content: "\00a0";
-  color: black;
-}
-.zocial.black {
-  background: black;
-  color: white !important;
-}
-.zocial.black > span:before {
-  content: "\00a0";
-  color: white;
-}
-.zocial.red {
-  background: red;
-  color: white !important;
-}
-.zocial.red > span:before {
-  content: "\00a0";
-  color: white;
-}
-.zocial.green {
-  background: green;
-  color: white !important;
-}
-.zocial.green > span:before {
-  content: "\00a0";
-  color: white;
-}
-.zocial.blue {
-  background: blue;
-  color: white !important;
-}
-.zocial.blue > span:before {
-  content: "\00a0";
-  color: white;
+
+.zocial.facebook {
+  background: #4863ae;
 }
 .zocial.facebook > span:before {
   content: "f";
 }
-.zocial.github > span:before {
-  content: "g";
-}
-.zocial.googleplus > span:before {
-  content: "+";
-}
-.zocial.rss > span:before {
-  content: "R";
-}
-.zocial.smashingmag > span:before {
-  content: "*";
-}
-.zocial.twitter > span:before {
-  content: "T";
-}
+
 .zocial.github {
   color: #050505 !important;
   background: #fbfbfb;
 }
+.zocial.github > span:before {
+  content: "g";
+}
+
 .zocial.googleplus {
   background: #282626;
 }
@@ -214,16 +171,28 @@
   box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   z-index: 0;
 }
-.zocial.facebook {
-  background: #4863ae;
+.zocial.googleplus > span:before {
+  content: "+";
 }
+
 .zocial.rss {
   background: #ff7f25;
 }
+.zocial.rss > span:before {
+  content: "R";
+}
+
 .zocial.smashingmag {
   background: #ff4f27;
 }
+.zocial.smashingmag > span:before {
+  content: "*";
+}
+
 .zocial.twitter {
   background: #e9f9ff;
   color: #3c6b9c !important;
+}
+.zocial.twitter > span:before {
+  content: "T";
 }
