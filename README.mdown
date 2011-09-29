@@ -43,10 +43,11 @@ Once you've done this, your project will be ready to use Zocial! The next step i
 
 ## Usage
 
-Zocial Buttons is delivered with a few default variables in place you can override to fine tune Zocial for your project.
+Zocial has a few defaults in place that you can override to fine tune Zocial for your project.
 
     // Defaults
     $zocial-font-size: 1.8em
+    $zocial-font-weight: bold
     $zocial-icon-font: zocial-lite
     $zocial-icon-default: "-"
     $zocial-text-font: helvetica
@@ -61,24 +62,24 @@ Last but not least, you can set the `$zocial-text-font` to something other than 
 
 Here's a snippet of example HTML markup in both HTML and Haml. The caveat or gotcha that most people stumble over is the required nested `<span>` element. As you can see, each Zocial button gets the required `.zocial` class name plus the button name.
 
-    <button class="zocial icon twitter">
-      <span>Sign in with Twitter</span>
-    </button>
-    <a class="zocial icon twitter" href="#">
-      <span>Sign in with Twitter</span>
-    </a>
-
-    %button.zocial.icon.twitter
-      %span Sign in with Twitter
-    %a(href="#" class="zocial icon twitter")
-      %span Sign in with Twitter
-
-To use just the icon version of the Zocial button, all you need to do is add the class name `.icon` to the above markup. Here's is the repeated code, but this time adding the `.icon` class.
-
     <button class="zocial twitter">
       <span>Sign in with Twitter</span>
     </button>
     <a class="zocial twitter" href="#">
+      <span>Sign in with Twitter</span>
+    </a>
+
+    %button.zocial.twitter
+      %span Sign in with Twitter
+    %a(href="#" class="zocial twitter")
+      %span Sign in with Twitter
+
+To use just the icon version of the Zocial button, all you need to do is add the class name `.icon` to the above markup. Here's is the repeated code, but this time adding the `.icon` class.
+
+    <button class="zocial icon twitter">
+      <span>Sign in with Twitter</span>
+    </button>
+    <a class="zocial icon twitter" href="#">
       <span>Sign in with Twitter</span>
     </a>
 

@@ -1,0 +1,14 @@
+# 0.0.3
+
+* Cleaned up and optimized the code base, mainly interesting to developers tracking the codebase
+* Updated tests
+* Updated static CSS templates
+
+# 0.0.2
+
+* Massive re-write of all the buttons styles to break them all out to a mixin
+* Architected the workflow of including those mixins
+
+# 0.0.1
+
+* The first version was more or less a post to Sass using Compass mixins with some other nice features such as fonts and better overall organization of the original code base in Sass.
