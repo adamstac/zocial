@@ -62,7 +62,7 @@ Zocial has a few defaults in place that you can override for your project.
 
 ### Mixins
 
-Once you have the setting in place that you want to use, it's time to mixin zocial. Zocial has to two mixins, one for the free set and one for the full set that can [purchased here](http://zocial.smcllns.com/).
+Once you have Zocial's settings in place, it's time to mixin zocial. Zocial has two mixins, one for the free set (zocial-lite) and one for the full set (zocial-full) that can [purchased here](http://zocial.smcllns.com/).
 
 To use the free set that comes with this project, use this mixin:
 
