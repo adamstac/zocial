@@ -1,6 +1,6 @@
 # 0.0.4 (not yet released)
 
-* Updated the $zocial-icon-default to "\0020" which an empty space
+* Updated the $zocial-icon-default to "\0020" which is an empty space
 
 # 0.0.3
 
