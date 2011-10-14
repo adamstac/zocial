@@ -1,6 +1,6 @@
-# Zocial: CSS3 Buttons, Sass Framework.
+# Zocial, a CSS3 social buttons Sass framework.
 
-## Zocial is a CSS3 button set and vector icons with @font-face bundled as a Sass framework.
+## Zocial is a CSS3 social buttons set and vector icons with @font-face as a Sass mixin and usable as a Compass extension.
 
 HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
@@ -43,20 +43,22 @@ Once you've done this, your project will be ready to use Zocial! The next step i
 
 ## Usage
 
-Zocial has a few defaults in place that you can override to fine tune Zocial for your project.
+Zocial has a few defaults in place that you can override for your project.
 
     // Defaults
     $zocial-font-size: 1.8em
     $zocial-font-weight: bold
     $zocial-icon-font: zocial-lite
-    $zocial-icon-default: "-"
+    $zocial-icon-default: "\0020"
     $zocial-text-font: helvetica
+    
+`$zocial-font-size` is set using ems and will vary in size based on your default font size.
 
-Based on the default variables, you can set `$zocial-icon-font` to `zocial` if you own the full set. This will also unfurl the styles for the full set as well as Zocial-Lite. Keep in mind that if you use the full set in your project, you are still bound by the license terms of the full set even though this framework is open source.
+`$zocial-icon-font` is set to "zocial-lite" by default, but if you have bought the FULL zocial icon set, you can set this to "zocial-full" to use all the buttons zocial has to offer.
 
-You can also set the `$zocial-font-size` to something larger or smaller than the default of 1.8em.
+`$zocial-icon-default` is set to an empty space by default. Feel free to update this if you plan to use a default button and want to set a default icon.
 
-Last but not least, you can set the `$zocial-text-font` to something other than Helvetica. The font family choices are listed below. In a future release, we plan to work on adding better options for using other fonts. Please be patient.
+`$zocial-text-font` is set to "helvetica" by default, but can set to [any of the fonts](https://github.com/adamstac/zocial/blob/master/stylesheets/partials/_fonts.sass) defined. In a future release, we plan to work on adding better options for using other fonts. Please be patient.
 
 ## HTML Markup
 

@@ -1,3 +1,7 @@
+# 0.0.4 (not yet released)
+
+* Updated the $zocial-icon-default to "\0020" which an empty space
+
 # 0.0.3
 
 * Cleaned up and optimized the code base, mainly interesting to developers tracking the codebase
