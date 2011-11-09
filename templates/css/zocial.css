@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Zocial-Lite";
-  src: url('/fonts/zocial/zocial-lite-regular-webfont.eot');
-  src: url('/fonts/zocial/zocial-lite-regular-webfont.eot?iefix') format('eot'), url('/fonts/zocial/zocial-lite-regular-webfont.woff') format('woff'), url('/fonts/zocial/zocial-lite-regular-webfont.ttf') format('truetype'), url('/fonts/zocial/zocial-lite-regular-webfont.svg') format('svg');
+  font-family: "Zocial";
+  src: url('/fonts/zocial/zocial-regular-webfont.eot');
+  src: url('/fonts/zocial/zocial-regular-webfont.eot?iefix') format('eot'), url('/fonts/zocial/zocial-regular-webfont.woff') format('woff'), url('/fonts/zocial/zocial-regular-webfont.ttf') format('truetype'), url('/fonts/zocial/zocial-regular-webfont.svg') format('svg');
 }
 
-.ff-zocial-lite, .zocial > span:before {
-  font-family: "Zocial-Lite", sans-serif;
+.ff-zocial, .zocial > span:before {
+  font-family: "Zocial", sans-serif;
 }
 
 .ff-helvetica, .ff-arial, .zocial {
@@ -96,10 +96,10 @@
   background: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
 .zocial > span:before {
-  content: "-";
+  content: "\0020";
 }
 
-.adjustment-1, .zocial.github, .zocial.twitter {
+.adjustment-1, .zocial.cloudapp, .zocial.dropbox, .zocial.github, .zocial.gmail, .zocial.instapaper, .zocial.openid, .zocial.plancast, .zocial.posterous, .zocial.twitter, .zocial.wikipedia {
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -o-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
@@ -107,7 +107,7 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-.adjustment-2, .zocial.github:hover > span, .zocial.github:focus > span, .zocial.twitter:focus > span {
+.adjustment-2, .zocial.dropbox:hover > span, .zocial.dropbox:focus > span, .zocial.github:hover > span, .zocial.github:focus > span, .zocial.gmail:hover > span, .zocial.gmail:focus > span, .zocial.instapaper:hover > span, .zocial.instapaper:focus > span, .zocial.openid:hover > span, .zocial.openid:focus > span, .zocial.plancast:hover > span, .zocial.plancast:focus > span, .zocial.posterous:hover > span, .zocial.posterous:focus > span, .zocial.twitter:focus > span, .zocial.wikipedia:hover > span, .zocial.wikipedia:focus > span {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.15)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
@@ -116,13 +116,110 @@
   background: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
 }
 
-.adjustment-3, .zocial.github:active > span, .zocial.twitter:active > span {
+.adjustment-3, .zocial.dropbox:active > span, .zocial.github:active > span, .zocial.gmail:active > span, .zocial.instapaper:active > span, .zocial.openid:active > span, .zocial.plancast:active > span, .zocial.posterous:active > span, .zocial.twitter:active > span, .zocial.wikipedia:active > span {
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
   background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+}
+
+.zocial.amazon {
+  background: #ffad1d;
+  color: #030037 !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.zocial.amazon > span:before {
+  content: "a";
+}
+
+.zocial.android {
+  background: #a4c639;
+}
+.zocial.android > span:before {
+  content: "&";
+}
+
+.zocial.aol {
+  background: red;
+}
+.zocial.aol > span:before {
+  content: '"';
+}
+
+.zocial.appstore {
+  background: #007dcb !important;
+}
+.zocial.appstore > span:before {
+  content: "^";
+}
+
+.zocial.chrome {
+  background: #006cd4;
+}
+.zocial.chrome > span:before {
+  content: "[";
+}
+
+.zocial.cloudapp {
+  background: white;
+  color: #312c2a !important;
+}
+.zocial.cloudapp > span:before {
+  content: "c";
+}
+
+.zocial.creativecommons {
+  background: black;
+}
+.zocial.creativecommons > span:before {
+  content: "C";
+}
+
+.zocial.disqus {
+  background: #216892;
+}
+.zocial.disqus > span:before {
+  content: "Q";
+}
+
+.zocial.dribbble {
+  background: #ea4c89;
+}
+.zocial.dribbble > span:before {
+  content: "D";
+}
+
+.zocial.dropbox {
+  background: #f5f5f5;
+  color: #312c2a !important;
+}
+.zocial.dropbox > span:before {
+  content: "d";
+  color: #4ea4e3;
+}
+
+.zocial.eventasaurus {
+  background: #8ccc33;
+}
+.zocial.eventasaurus > span:before {
+  content: "v";
+}
+
+.zocial.eventbrite {
+  background: #ff5616;
+}
+.zocial.eventbrite > span:before {
+  content: "|";
+}
+
+.zocial.evernote {
+  background: #6bb130;
+  color: white !important;
+}
+.zocial.evernote > span:before {
+  content: "E";
 }
 
 .zocial.facebook {
@@ -132,12 +229,50 @@
   content: "f";
 }
 
+.zocial.flattr {
+  background: #8aba42;
+}
+.zocial.flattr > span:before {
+  content: "%";
+}
+
+.zocial.forrst {
+  background: #1e360d;
+}
+.zocial.forrst > span:before {
+  content: ":";
+  color: #50894f;
+}
+
+.zocial.foursquare {
+  background: #44a8e0;
+}
+.zocial.foursquare > span:before {
+  content: "4";
+}
+
 .zocial.github {
   color: #050505 !important;
   background: #fbfbfb;
 }
 .zocial.github > span:before {
   content: "g";
+}
+
+.zocial.gmail {
+  background: #efefef;
+  color: #222222 !important;
+}
+.zocial.gmail > span:before {
+  content: "m";
+  color: red;
+}
+
+.zocial.google {
+  background: #4e6cf7;
+}
+.zocial.google > span:before {
+  content: "G";
 }
 
 .zocial.googleplus {
@@ -175,11 +310,131 @@
   content: "+";
 }
 
+.zocial.gowalla {
+  background: #ff720a;
+}
+.zocial.gowalla > span:before {
+  content: "@";
+}
+
+.zocial.guest {
+  background: #1b4d6d;
+}
+.zocial.guest > span:before {
+  content: "?";
+}
+
+.zocial.html5 {
+  background: #ff3617;
+}
+.zocial.html5 > span:before {
+  content: "5";
+}
+
+.zocial.ie {
+  background: #00a1d9;
+}
+.zocial.ie > span:before {
+  content: "6";
+}
+
+.zocial.instapaper {
+  color: #222222 !important;
+  background: #eeeeee;
+}
+.zocial.instapaper > span:before {
+  content: "I";
+}
+
+.zocial.intensedebate {
+  background: #0099e1;
+}
+.zocial.intensedebate > span:before {
+  content: "{";
+}
+
+.zocial.itunes {
+  background: #222222;
+}
+.zocial.itunes > span:before {
+  content: "A";
+}
+
+.zocial.lastfm {
+  background: #dc1a23;
+}
+.zocial.lastfm > span:before {
+  content: "l";
+}
+
+.zocial.linkedin {
+  background: #0083a8;
+}
+.zocial.linkedin > span:before {
+  content: "L";
+}
+
+.zocial.meetup {
+  background: #ff0026;
+}
+.zocial.meetup > span:before {
+  content: "M";
+}
+
+.zocial.openid {
+  background: #f5f5f5;
+  color: #333333 !important;
+}
+.zocial.openid > span:before {
+  content: "o";
+  color: #ff921d;
+}
+
+.zocial.paypal {
+  background: #ff921d;
+  color: #032751 !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.zocial.paypal > span:before {
+  content: "$";
+}
+
+.zocial.plancast {
+  background: #e7ebed;
+  color: #333333 !important;
+}
+.zocial.plancast > span:before {
+  content: "P";
+}
+
+.zocial.posterous {
+  background: #ffd959;
+  color: #bc7134 !important;
+}
+.zocial.posterous > span:before {
+  content: "~";
+}
+
 .zocial.rss {
   background: #ff7f25;
 }
 .zocial.rss > span:before {
   content: "R";
+}
+
+.zocial.scribd {
+  background: #231c1a;
+}
+.zocial.scribd > span:before {
+  content: "}";
+  color: #00d5ea !important;
+}
+
+.zocial.skype {
+  background: #00a2ed;
+}
+.zocial.skype > span:before {
+  content: "S";
 }
 
 .zocial.smashingmag {
@@ -189,10 +444,81 @@
   content: "*";
 }
 
+.zocial.songkick {
+  background: #ff0050;
+}
+.zocial.songkick > span:before {
+  content: "k";
+}
+
+.zocial.soundcloud {
+  background: #ff4500;
+}
+.zocial.soundcloud > span:before {
+  content: "s";
+}
+
+.zocial.spotify {
+  background: #60af00;
+}
+.zocial.spotify > span:before {
+  content: "=zocial-";
+}
+
+.zocial.tumblr {
+  background: #374a61;
+}
+.zocial.tumblr > span:before {
+  content: "t";
+}
+
 .zocial.twitter {
   background: #e9f9ff;
   color: #3c6b9c !important;
 }
 .zocial.twitter > span:before {
   content: "T";
+}
+
+.zocial.vimeo {
+  background: #00a2cd;
+}
+.zocial.vimeo > span:before {
+  content: "V";
+}
+
+.zocial.wikipedia {
+  background: white;
+  color: black !important;
+}
+.zocial.wikipedia > span:before {
+  content: ",";
+}
+
+.zocial.wordpress {
+  background: #464646;
+}
+.zocial.wordpress > span:before {
+  content: "w";
+}
+
+.zocial.yahoo {
+  background: #a200c2;
+}
+.zocial.yahoo > span:before {
+  content: "Y";
+}
+
+.zocial.yelp {
+  background: #e60010;
+}
+.zocial.yelp > span:before {
+  content: "y";
+}
+
+.zocial.youtube {
+  background: red;
+}
+.zocial.youtube > span:before {
+  content: "U";
 }

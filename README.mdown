@@ -4,7 +4,7 @@
 
 HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
-You can find the CSS only version (no Sass) and the full font set at [zocial.smcllns.com](http://zocial.smcllns.com/). This project comes with a free subset of that font set, and includes:
+This project comes with a free subset of that font set, and includes:
 
 * Twitter
 * Facebook
@@ -12,8 +12,7 @@ You can find the CSS only version (no Sass) and the full font set at [zocial.smc
 * GitHub
 * RSS
 * Smashing Magazine
-
-![Zocial-Lite Preview](https://github.com/adamstac/zocial/raw/master/test/public/images/zocial-lite-preview.jpg)
+* and MANY more ...
 
 ## Installation
 
@@ -34,10 +33,10 @@ You should see something like this:
 
     -> % compass install zocial/fonts
     directory fonts/zocial/ 
-      create fonts/zocial/zocial-lite-regular-webfont.eot
-      create fonts/zocial/zocial-lite-regular-webfont.svg
-      create fonts/zocial/zocial-lite-regular-webfont.ttf
-      create fonts/zocial/zocial-lite-regular-webfont.woff
+      create fonts/zocial/zocial-regular-webfont.eot
+      create fonts/zocial/zocial-regular-webfont.svg
+      create fonts/zocial/zocial-regular-webfont.ttf
+      create fonts/zocial/zocial-regular-webfont.woff
 
 Once you've done this, your project will be ready to use Zocial! The next step is to "mixin" Zocial which is covered in the usage section.
 
@@ -48,13 +47,13 @@ Zocial has a few defaults in place that you can override for your project.
     // Defaults
     $zocial-font-size: 1.8em
     $zocial-font-weight: bold
-    $zocial-icon-font: zocial-lite
+    $zocial-icon-font: zocial
     $zocial-icon-default: "\0020"
     $zocial-text-font: helvetica
     
 `$zocial-font-size` is set using ems and will vary in size based on your default font size.
 
-`$zocial-icon-font` is set to "zocial-lite" by default, but if you have bought the FULL zocial icon set, you can set this to "zocial-full" to use all the buttons zocial has to offer.
+`$zocial-icon-font` is set to "zocial" by default. In a previous version, there was a "lite" version of the font offered as open source, but now the full Zocial font is now included as open source and you can use all the buttons zocial has to offer.
 
 `$zocial-icon-default` is set to an empty space by default. Feel free to update this if you plan to use a default button and want to set a default icon.
 
@@ -67,18 +66,10 @@ Once you have Zocial's settings in place, it's time to mixin zocial. Zocial has 
 To use the free set that comes with this project, use this mixin:
 
     // SCSS
-    @include zocial-lite;
+    @include zocial;
 
     // Sass
-    +zocial-lite
-
-If you own the full set, use this mixin:
-
-    // SCSS
-    @include zocial-full;
-
-    // Sass
-    +zocial-full
+    +zocial
 
 ## HTML Markup
 
@@ -125,7 +116,7 @@ The examples shown above illustrate how to use the Twitter Zocial button. Below 
 
 **Icon font:**
 
-* zocial-lite
+* zocial
 
 **Text font:**
 

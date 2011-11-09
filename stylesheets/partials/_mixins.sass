@@ -1,10 +1,7 @@
-// Include all of zocial-full
-=zocial-full
+// Include all of zocial
+=zocial
 
-  // Also include zocial-lite
-  +zocial-lite
-
-  // And, now do the rest ...
+  // Zocial, Sorted A-Z
   +zocial-amazon
   +zocial-android
   +zocial-aol
@@ -18,11 +15,14 @@
   +zocial-eventasaurus
   +zocial-eventbrite
   +zocial-evernote
+  +zocial-facebook
   +zocial-flattr
   +zocial-forrst
   +zocial-foursquare
+  +zocial-github
   +zocial-gmail
   +zocial-google
+  +zocial-googleplus
   +zocial-gowalla
   +zocial-guest
   +zocial-html5
@@ -37,12 +37,15 @@
   +zocial-paypal
   +zocial-plancast
   +zocial-posterous
+  +zocial-rss
   +zocial-scribd
   +zocial-skype
+  +zocial-smashingmag
   +zocial-songkick
   +zocial-soundcloud
   +zocial-spotify
   +zocial-tumblr
+  +zocial-twitter
   +zocial-vimeo
   +zocial-wikipedia
   +zocial-wordpress
@@ -141,6 +144,12 @@
     & > span:before
       content: "E"
 
+=zocial-facebook
+  .zocial.facebook
+    background: #4863AE
+    &> span:before
+      content: "f"
+
 =zocial-flattr
   .zocial.flattr
     background: #8ABA42
@@ -160,6 +169,18 @@
     & > span:before
       content: "4"
 
+=zocial-github
+  .zocial.github
+    @extend .adjustment-1
+    color: #050505 !important
+    background: #FBFBFB
+    &:hover > span, &:focus > span
+      @extend .adjustment-2
+    &:active > span
+      @extend .adjustment-3
+    & > span:before
+      content: "g"
+
 =zocial-gmail
   .zocial.gmail
     @extend .adjustment-1
@@ -178,6 +199,26 @@
     background: #4E6CF7
     & > span:before
       content: "G"
+
+=zocial-googleplus
+  .zocial.googleplus
+    background: #282626
+    &:before
+      content: ""
+      display: block
+      height: 0.2em
+      margin-bottom: -0.1em
+      width: 100%
+      position: relative
+      left: 0em
+      top: 0
+      +background(linear-gradient(left, #d20e1b, #d20e1b 25%, #3156e6 25%, #3156e6 50%, #2aa134 50%, #2aa134 75%, #ecb01b 75%, #ecb01b))
+      +border-radius(0.2em 0.2em 0 0)
+      border-bottom: 1px solid rgba(#000,.8)
+      +box-shadow(inset 0 0.063em 0 rgba(#fff,.4), inset 0 0 0.063em rgba(#fff,.6), 0 0.063em 0 rgba(#fff,.3))
+      z-index: 0
+    & > span:before
+      content: "+"
 
 =zocial-gowalla
   .zocial.gowalla
@@ -290,6 +331,12 @@
     & > span:before
       content: "~"
 
+=zocial-rss
+  .zocial.rss
+    background: #FF7F25
+    & > span:before
+      content: "R"
+
 =zocial-scribd
   .zocial.scribd
     background: #231C1A
@@ -302,6 +349,12 @@
     background: #00A2ED
     & > span:before
       content: "S"
+
+=zocial-smashingmag
+  .zocial.smashingmag
+    background: #FF4F27
+    & > span:before
+      content: "*"
 
 =zocial-songkick
   .zocial.songkick
@@ -326,6 +379,18 @@
     background: #374a61
     & > span:before
       content: "t"
+
+=zocial-twitter
+  .zocial.twitter
+    @extend .adjustment-1
+    background: #E9F9FF
+    color: #3C6B9C !important
+    &:focus > span
+      @extend .adjustment-2
+    &:active > span
+      @extend .adjustment-3
+    & > span:before
+      content: "T"
 
 =zocial-vimeo
   .zocial.vimeo

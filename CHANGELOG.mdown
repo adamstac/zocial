@@ -1,9 +1,7 @@
-# 0.0.4 (not yet released)
-
-* Updated the $zocial-icon-default to "\0020" which an empty space
-
 # 0.0.3
 
+* Updated the $zocial-icon-default to "\0020" which an empty space
+* Updated to add the FULL Zocial font. That's right, the FULL Zocial font is now open sourced and Zocial "lite" is now deprecated and will no longer be supported.
 * Cleaned up and optimized the code base, mainly interesting to developers tracking the codebase
 * Updated tests
 * Updated static CSS templates
