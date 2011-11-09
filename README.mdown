@@ -4,7 +4,7 @@
 
 HUGE thanks to [Sam Collins](http://twitter.com/smcllns) for all his hard work on the original CSS3 button set and the Zocial icons font! Without his work, this project would not exist.
 
-This project comes with a free subset of that font set, and includes:
+This project includes buttons for:
 
 * Twitter
 * Facebook
