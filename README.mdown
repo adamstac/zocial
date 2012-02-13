@@ -59,6 +59,12 @@ Zocial has a few defaults in place that you can override for your project.
 
 `$zocial-text-font` is set to "helvetica" by default, but can set to [any of the fonts](https://github.com/adamstac/zocial/blob/master/stylesheets/partials/_fonts.sass) defined. In a future release, we plan to work on adding better options for using other fonts. Please be patient.
 
+Last but not least, import the Zocial base classes to your stylesheet:
+
+    @import "zocial"
+
+In order to override any of the defaults, you must declare your overrides **before** the `@import` statement.
+
 ### Mixins
 
 Once you have Zocial's settings in place, it's time to mixin zocial. Zocial has two mixins, one for the free set (zocial-lite) and one for the full set (zocial-full) that can [purchased here](http://zocial.smcllns.com/).
