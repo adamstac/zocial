@@ -9,7 +9,9 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    css_parser (1.1.9)
+    css_parser (3.0.0)
+      addressable
+      ssrf_filter (~> 1.5)
     fssm (0.2.7)
     haml (3.1.2)
     heroku (2.7.0)
@@ -39,6 +41,7 @@ GEM
       rack-test (~> 0.5)
       tilt (~> 1.3)
       tzinfo
+    ssrf_filter (1.5.0)
     syntax (1.0.0)
     term-ansicolor (1.0.6)
     tilt (1.3.3)
@@ -49,7 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 0.11.5)
-  css_parser (~> 1.1.9)
+  css_parser (~> 3.0.0)
   haml (~> 3.1.2)
   heroku
   maruku (~> 0.6.0)
