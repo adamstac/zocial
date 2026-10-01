@@ -1,5 +1,10 @@
 // Zocial base button architecture
 =zocial-base
+  // Tweak to styles for -moz
+  button.zocial::-moz-focus-inner
+    border: 0
+    padding: 0
+
   .zocial, .zocial > span
     +border-radius(0.2em)
     position: relative
@@ -20,11 +25,6 @@
     padding: 0
     text-decoration: none !important
     
-    // Tweak to styles for -moz
-    button::-moz-focus-inner
-      border: 0
-      padding: 0
-
     // Add a class of "icon" to display as standalone icons instead
     &.icon
       width: 1.85em

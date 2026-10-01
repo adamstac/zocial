@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0;
   text-decoration: none !important;
 }
-.zocial button::-moz-focus-inner {
+button.zocial::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
