@@ -462,7 +462,7 @@
   background: #60af00;
 }
 .zocial.spotify > span:before {
-  content: "=zocial-";
+  content: "=";
 }
 
 .zocial.tumblr {
